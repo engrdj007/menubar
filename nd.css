@@ -1,0 +1,43 @@
+
+.container{
+	width: 800px;
+	margin: 0 auto;
+}
+ul{
+	list-style: none;  /*for list dot none*/
+}
+li{
+	background-color: skyblue; /*menu bar color*/
+	width: 150px; /*per menu size*/
+	border: 1px solid white;/*ak menu theke arek menu durotto*/
+	border-radius: 10px; /*border er pashe ektu gol kore shundor kora*/ 
+	height: 50px; /*menu hight*/
+	line-height: 50px; /*line hight dile lekha upor niche menu border e na theke majhe chole ashe*/
+	text-align: center; /*lekha gula menu er center kora*/
+	float: left; /*shob gula nav bar er moto kora*/
+	color: white; /*lekha color white*/
+	transition-duration: 1s; /*etar madhome cursor nie gele kotokhon thakbe dhire dhire show korbe ta bujhay*/
+}
+li:hover{
+	background-color: #292929; /*main menu te hover style black kora*/
+}
+.s-ul{
+	margin-left: -41px; /*second ul mane submenu ta shoman jaygay nie asha*/ 
+	display: none; /*display none kora karon jokhon hover korbo only tokhon ashbe*/
+}
+
+ul li:hover > .s-ul{ /*main ul er vitor j li ase mane main menu bar oi khane hover korle submenu show korbe secont ul ta*/
+	display: block; /*age to none kora silo diplay tai akhon oita block akare show korbe*/
+}
+
+.t-ul{
+	margin:110px; /*submenu er vitor arek submenu oitar margin dea*/
+	margin-top: -51px; /*onno jaygay chole gese niche tai top er size onujai bosha*/
+	display: none;  /*eita akhon show korbe na tai diplay none kora karon eita show
+	 korbe na jokhon submenu er vitor e nie jabo tokhon show korbe*/
+}
+.s-ul li:hover > .t-ul{ /*eibar second ul er vitor j li ase mane 
+	submenu te hover korbo tokhon third ul ta show korbe*/
+	display: block; /*age to display block kora silo tai ebar show kora hoise*/
+}
+
